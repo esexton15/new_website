@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Geist:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    font-family: "Geist", sans-serif;
+    line-height: 1.2;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #fff;
+    --primary-color-foreground: #000;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --primary-color: #000;
+        --primary-color-foreground: #fff;
+    }
+}
+
+
+html,body {
+    background: linear-gradient(0deg,rgba(42, 123, 155, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(237, 221, 83, 1) 100%);;
+}
+
+body {
+    max-width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+section {
+    padding: 0rem 1rem;
+}
+
+table {
+    width: 100%;
+}
+
+h1 {
+    font-weight: normal;
+    letter-spacing: 1rem;
+}
+
+table, th, td {
+    border: 2px solid lightgray;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    padding: 16px;
+}
+
+.box:hover {
+    border-width: 4px;
+    border-style: solid;
+    border-color: black;
+}
+
+.box.small {
+    width: 50px;
+    height: 50px;
+}
+
+#example .box {
+    background-color: blue
+}
+
+nav {
+    display: flex;
+    gap: 8px;
+}
+
+nav a {
+    display: block;
+    padding: 1rem;
+    background-color: var(--primary-color);
+    text-decoration: none;
+    color: var(--primary-color-foreground);
+}
+
+nav a:hover {
+    background-color: gray;
+}
+
+input:disabled {
+    background-color: black;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: lightgray;
+}
+
+ul > li > ul {
+    list-style-type: disc;
+}
+
+a[target="_blank"]::after {
+    content: "↗";
+}
+
+p::first-letter {
+    font-size: 2rem;
+    color: #58ffbc;
+}
+
+.background {
+    width: 400px;
+    height: 400px;
+    background-color: red;
+    background-image: url("assets/example.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.float img {
+    float: left;
+    margin: 0 1rem 1rem 0;
+}
+
+.float img::after {
+    clear: both;
+}
+
+.row {
+    display: flex;
+    gap: 1rem;
+}
+
+.row img {
+    display: block;
+    flex-shrink: 0;
+    flex-grow: 0;
+    aspect-ratio: 1/1;
+    height: auto;
+}
+
+.dotted {
+    margin: 32px 0;
+    border-width: 4px;
+    border-style: dotted;
+    border-color: black;
+}

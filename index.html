@@ -7,43 +7,145 @@
     <title>Testing Dev Tools</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="assets/300.png">
+
 </head>
 
 
-<body>
+<body class="dark">
     <h1>Hello World</h1>
+    <nav>
+        <a class="nav-button font-lg bg-green" href="index.html">Home Page</a> |
+        <a class="nav-button font-lg"
+            href="equipment/index.html">Equipment</a>
+    </nav>
 
-    <a href="index.html">Home Page</a> | <a href="equipment/index.html">Equipment</a>
-
-    <p>Lorem ipsum dolor sit amet&comma; consectetur adipisicing elit. Laborum
-        aperiam earum laboriosam praesentium quam! Itaque, maxime? Esse
-        excepturi asperiores est, officiis ex ipsam possimus vitae? Voluptatem
-        consequuntur sequi alias quis.
-    </p>
-    <img src="assets/300.png" alt="" height="300">
-
-    <section>
+    <section class="dotted">
         <h2>About Us</h2>
-        <p>Lorem ipsum dolor sit amet&comma; consectetur
-            <strong>adipisicing elit. Laborum aperiam earum laboriosam praesentium</strong> quam!
-            <em>Itaque, maxime? Esse excepturi asperiores</em> est, officiis ex ipsam
-            possimus vitae?
-            <cite>Voluptatem consequuntur sequi alias quis.</cite>
-        </p>
-        
+        <div class="row">
+            <div>
+                <img src="assets/example.jpg" alt="Example Image" width="200">
+            </div>
+            <p>
+
+                <a href="https://google.com" target="_blank">Google.com</a>. ipsum dolor sit amet&comma; consectetur
+                <strong>adipisicing elit. Laborum aperiam earum laboriosam
+                    praesentium</strong> quam!
+                <em>Itaque, maxime? Esse excepturi asperiores</em> est, officiis ex
+                ipsam
+                possimus vitae?
+                <cite>Voluptatem consequuntur sequi alias quis.</cite>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem tenetur magnam maiores aliquid sapiente! Natus nesciunt totam nisi provident adipisci a, atque quisquam cupiditate tempore vero assumenda possimus fuga rem.
+            </p>
+        </div>
+
+
+        <ul>
+            <li>
+                Service 1
+                <ul>
+                    <li>Sub-service 1.1</li>
+                    <li>Sub-service 1.2</li>
+                </ul>
+            </li>
+            <li>Service 2</li>
+            <li>Service 3</li>
+        </ul>
+
+        <ol>
+            <li>
+                Service 1
+                <ol>
+                    <li>Sub-service 1.1</li>
+                    <li>Sub-service 1.2</li>
+                </ol>
+            </li>
+            <li>Service 2</li>
+            <li>Service 3</li>
+        </ol>
+
         <section>
             <h3>What do we do?</h3>
-            <p>Lorem ipsum, <mark>dolor sit amet consectetur adipisicing elit. Aut perferendis quidem cumque</mark> aliquam quasi qui cupiditate mollitia vero deleniti eveniet. Placeat, corporis porro? Dolor, eveniet asperiores quo sequi consectetur animi!</p>
+            <p>Lorem ipsum, <mark>dolor sit amet consectetur adipisicing elit.
+                    Aut perferendis quidem cumque</mark> aliquam quasi qui
+                cupiditate mollitia vero deleniti eveniet. Placeat, corporis
+                porro? Dolor, eveniet asperiores quo sequi consectetur animi!
+            </p>
         </section>
     </section>
 
 
     <section>
-        <h2>How to push in github</h2>
-        <p>To push in github you need to run the command: <code>git push</code></p>
+        <h2 id="github">How to push in github</h2>
+        <p>To push in github you need to run the command: <code>git push</code>
+        </p>
+    </section>
+
+    <section>
+        <h2>Data</h2>
+        <table>
+            <caption>Employee Information</caption>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Position</th>
+                    <th>Department</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Eric Sexton</td>
+                    <td>Software Engineer</td>
+                    <td>IT</td>
+                </tr>
+                <tr>
+                    <td>John Doe</td>
+                    <td>Project Manager</td>
+                    <td>Management</td>
+                </tr>
+                <tr>
+                    <td>Test User</td>
+                    <td>Test User</td>
+                    <td>Test Department</td>
+                </tr>
+                                <tr>
+                    <td>Test User</td>
+                    <td>Test User</td>
+                    <td>Test Department</td>
+                </tr>
+                                <tr>
+                    <td>Test User</td>
+                    <td>Test User</td>
+                    <td>Test Department</td>
+                </tr>
+                                <tr>
+                    <td>Test User</td>
+                    <td>Test User</td>
+                    <td>Test Department</td>
+                </tr>
+                                <tr>
+                    <td>Test User</td>
+                    <td>Test User</td>
+                    <td>Test Department</td>
+                </tr>
+                <tr>
+                    <td>Test User</td>
+                    <td>Test User</td>
+                    <td>Test Department</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3">Total Employees: 3</td>
+                </tr>
+            </tfoot>
+        </table>
     </section>
 
 
+    <br />
+    <br />
+    <br />
+    <br />
 
 </body>
 
